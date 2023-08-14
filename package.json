@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "http": "^0.0.0",
     "rxjs": "6.2.2"
   }
 }
