@@ -1,5 +1,5 @@
 import { from } from 'rxjs';
-import http from 'http';
+import { http } from 'http';
 
 function httpRequest(url) {
   return new Promise((resolve, reject) => {
@@ -31,6 +31,8 @@ httpRequest(url)
     console.error('Error:', error.message);
   });
 
+// https://www.learnrxjs.io/learn-rxjs/operators/creation/from
+// Example 2: Observable from promise
 //emit result of promise
 const promiseSrc = from(new Promise((resolve) => resolve('Hello World!')));
 //output: 'Hello World'
